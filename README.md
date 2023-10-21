@@ -1,0 +1,3 @@
+# Connect_to_MySQL
+### Install Oracle's MySql.Data NuGet package:
+Project menu -> Manage NuGet packages...
