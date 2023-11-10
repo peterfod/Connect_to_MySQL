@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 
-namespace _1_Connect
+namespace Connect
 {
 	public class EmployeesTable
 	{
@@ -16,12 +16,15 @@ namespace _1_Connect
 	{
 		static void Main(string[] args)
 		{
+			Console.ForegroundColor = ConsoleColor.Yellow;
 			List<EmployeesTable> employees = new List<EmployeesTable>();
+
 			string connString = "server=localhost;database=classicmodels;uid=teszt;pwd=abc123";
 			MySqlConnection conn = new MySqlConnection(connString);
 			Console.WriteLine("Kapcsolat megnyitása...");
 			conn.Open();
 			Console.WriteLine("Kapcsolat megnyitva");
+
 			string query = "SELECT * FROM employees";
 			MySqlCommand command = new MySqlCommand(query, conn);
 			MySqlDataReader reader = command.ExecuteReader();
@@ -40,14 +43,16 @@ namespace _1_Connect
 
 			reader.Close();
 			conn.Close();
-
+			Console.ForegroundColor = ConsoleColor.Blue;
 			Console.WriteLine("SQL-ből kiolvasott adatok:");
 
+			Console.ForegroundColor = ConsoleColor.DarkGreen;
 			foreach (var item in employees)
 			{
 				Console.WriteLine($"\t{item.id} | {item.firstName} | {item.lastName} | {item.email}");
 			}
 
+			Console.ForegroundColor = ConsoleColor.Red;
 			Console.WriteLine("Press any key to continue...");
 			Console.ReadKey();
 		}
