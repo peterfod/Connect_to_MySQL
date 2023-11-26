@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect", "Connect\Connect.csproj", "{1442E99F-4C09-4D3C-8DE6-280BA9B39DB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kivetelkezeles", "Kivetelkezeles\Kivetelkezeles.csproj", "{76614698-4C7D-4891-AA3F-F8D15CD6662A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{1442E99F-4C09-4D3C-8DE6-280BA9B39DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1442E99F-4C09-4D3C-8DE6-280BA9B39DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1442E99F-4C09-4D3C-8DE6-280BA9B39DB7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76614698-4C7D-4891-AA3F-F8D15CD6662A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76614698-4C7D-4891-AA3F-F8D15CD6662A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76614698-4C7D-4891-AA3F-F8D15CD6662A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76614698-4C7D-4891-AA3F-F8D15CD6662A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
